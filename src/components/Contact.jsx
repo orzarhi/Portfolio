@@ -32,11 +32,12 @@ export const Contact = () => {
 
     const sendEmail = async (e) => {
         e.preventDefault();
-        setSent(true)
+
         try {
             if (!name || !email || !message) {
                 info("Please fill in all fields.")
             } else {
+                setSent(true)
                 const sendRequest = await emailjs.sendForm(import.meta.env.VITE_SERVICE_ID, import.meta.env.VITE_TEMPLATE_ID, form.current, import.meta.env.VITE_PUBLIC_KEY)
                 if (sendRequest.status === 200) {
                     setSent(false)

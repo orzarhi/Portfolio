@@ -8,27 +8,33 @@ import react from "../assets/images/react.png"
 import tailwind from "../assets/images/tailwind.png"
 import html from "../assets/images/html.png"
 import typescript from "../assets/images/typescript.png"
-import redux from "../assets/images/redux.png"
 import csharp from "../assets/images/csharp.png"
+import zustand from "../assets/images/zustand.png"
 
 export const Technologies = () => {
+
+
     return (
-        <div className="font-electrolize text-white ml-10">
-            <span className="text-2xl ml-20 underline decoration-blue-dark/80 xl:ml-10">My favorite technologies</span>
-            <div className="grid justify-between w-1/5 grid-cols-3 gap-2 p-8 xl:full lg:full md:full sm:w-full">
-                <img src={csharp} className="w-12 m-2 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-200" />
-                <img src={css} className="w-12 m-2 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-200" />
-                <img src={node} className="w-12 m-2 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-200" />
-                <img src={javascript} className="w-12 m-2 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-200" />
-                <img src={typescript} className="w-12 m-2 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-200" />
-                <img src={docker} className="w-12 m-2 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-200" />
-                <img src={tailwind} className="w-12 m-2 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-200" />
-                <img src={html} className="w-12 m-2 transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration-200" />
-                <img src={reactQury} className="w-12 m-2 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-200" />
-                <img src={react} className="w-12 m-2 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-200" />
-                <img src={mongodb} className="w-12 m-2 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-200" />
-                <img src={redux} className="w-12 m-2 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-200" />
+        <div className="font-electrolize text-white w-full mt-24">
+            <div className="flex justify-center">
+                <span className="text-3xl underline decoration-blue-dark/80 mt-5">My favorite technologies</span>
             </div>
-        </div>
+
+            <div className="grid justify-items-center grid-cols-4 gap-y-10 ml-24 mt-5 p-8 xl:full sm:ml-0">
+                <img src={zustand} className="w-24 image-items " />
+                <img src={css} className="w-12 image-items" />
+                <img src={csharp} className="w-12 image-items" />
+                <img src={mongodb} className="w-12 image-items" />
+                <img src={node} className="w-12 image-items" />
+                <img src={javascript} className="w-12 image-items" />
+                <img src={typescript} className="w-12 image-items" />
+                <img src={docker} className="w-12 image-items" />
+                <img src={tailwind} className="w-12 image-items" />
+                <img src={react} className="w-12 image-items" />
+                <img src={reactQury} className="w-12 image-items" />
+                <img src={html} className="w-12 image-items" />
+            </div>
+        </div >
+
     )
 }

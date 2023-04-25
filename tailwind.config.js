@@ -54,7 +54,7 @@ export default {
 			"grey-dark": "#273444",
 			gray: "#8492a6",
 			"grey-light": "#FEFBF3",
-			black: "#171717",
+			black: "#0f0e13",
 			teal: "#088395",
 			sky: "#05BFDB",
 			"blue-dark": "#0A4D68",

@@ -1,13 +1,23 @@
-import { About } from "./components/About"
-import { Education } from "./components/Education"
-import { Technologies } from "./components/Technologies"
+import { About, Education, Experience, MilitaryService, Technologies, Contact } from "./components"
+import { motion, useScroll } from "framer-motion"
 
 export const App = () => {
+  const { scrollYProgress } = useScroll();
   return (
     <>
-      <About />
-      <Education />
-      <Technologies />
+
+      <motion.div className="fixed top-0 left-0 right-0 bg-teal h-2 origin-left	" style={{ scaleX: scrollYProgress }} />
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 1.5 }}>
+        <About />
+        <Experience />
+        <Education />
+        <Technologies />
+        <MilitaryService />
+        <Contact />
+      </motion.div>
     </>
   )
 }

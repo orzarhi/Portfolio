@@ -16,7 +16,7 @@ export const About = () => {
         },
     };
     const rotate = useMotionValue(0);
-    const scale = useTransform(rotate, [0, 2], [0, 1]);
+    const scale = useTransform(rotate, [0, 1], [0, 1]);
     return (
         <div className="flex font-electrolize text-white justify-start p-24 lg:grid sm:w-full sm:p-5">
             <div className="h-36 sm:-ml-2 w-max">

@@ -1,16 +1,16 @@
-import { useRef, useState } from "react";
-import { BsSend } from "react-icons/bs"
 import emailjs from '@emailjs/browser';
-import { success, error, info } from "../utils/notification";
 import { motion, useAnimation } from "framer-motion";
-import { useEffect } from "react"
+import { useEffect, useRef, useState } from "react";
+import { BsSend } from "react-icons/bs";
 import { useInView } from "react-intersection-observer";
+import { error, info, success } from "../utils/notification";
 
 export const Contact = () => {
     const form = useRef();
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [message, setMessage] = useState("");
+    const [sent, setSent] = useState(false);
 
 
     const boxVariant = {
@@ -32,19 +32,21 @@ export const Contact = () => {
 
     const sendEmail = async (e) => {
         e.preventDefault();
-
+        setSent(true)
         try {
             if (!name || !email || !message) {
                 info("Please fill in all fields.")
             } else {
                 const sendRequest = await emailjs.sendForm(import.meta.env.VITE_SERVICE_ID, import.meta.env.VITE_TEMPLATE_ID, form.current, import.meta.env.VITE_PUBLIC_KEY)
                 if (sendRequest.status === 200) {
+                    setSent(false)
                     success("Message was sent successfully.")
                     resetInputs();
                 }
             }
 
         } catch (err) {
+            setSent(false)
             error(err ? err.message : "Something went wrong, try again.")
         }
 
@@ -74,7 +76,7 @@ export const Contact = () => {
                     <input className="w-2/5 h-12 bg-transparent bg-black border rounded-md md:w-11/12 placeholder:p-2 focus:border-teal focus:ring-purple focus:outline-none focus:ring focus:ring-opacity-40" name="user_name" placeholder="Name" value={name} onChange={({ target }) => setName(target.value)} />
                     <input type="email" className="w-2/5 h-12 bg-transparent bg-black border rounded-md md:w-11/12 placeholder:p-2 focus:border-teal focus:ring-purple focus:outline-none focus:ring focus:ring-opacity-40" name="user_email" placeholder="Email" value={email} onChange={({ target }) => setEmail(target.value)} />
                     <textarea className="w-2/5 h-12 bg-transparent bg-black border rounded-md md:w-11/12 placeholder:p-2 focus:border-teal focus:ring-purple focus:outline-none focus:ring focus:ring-opacity-40 " name="message" placeholder="Message" value={message} onChange={({ target }) => setMessage(target.value)} />
-                    <button className="w-2/5 p-1 mb-16 text-2xl rounded-md shadow-md md:w-11/12 bg-gradient-to-r from-teal to-purple shadow-grey-dark hover:shadow-gray via-blue" ><BsSend className="inline-block" /></button>
+                    <button className={` w-2/5 p-1 mb-16 text-2xl rounded-md shadow-md md:w-11/12  shadow-grey-dark hover:shadow-gray  bg-gradient-to-r ${!sent ? "from-teal to-purple via-blue" : "from-teal/40 to-purple/40 via-blue/40"}`} disabled={sent}> <BsSend className="inline-block" /></button>
                 </form >
             </motion.div>
         </>

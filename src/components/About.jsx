@@ -5,6 +5,8 @@ import { CiLinkedin } from "react-icons/ci"
 import { AiOutlineMail, AiOutlineWhatsApp } from "react-icons/ai"
 import { BsFiletypePdf } from "react-icons/bs"
 import { motion, useMotionValue, useTransform } from 'framer-motion';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 export const About = () => {
     const blockVariants = {
@@ -24,7 +26,11 @@ export const About = () => {
                     I&lsquo;m Or Zarhi, Full-Stack Developer
                 </h1>
                 <div className="w-max relative max-w-xs overflow-hidden bg-cover bg-no-repeat">
-                    <img className="w-40 animate-[wiggle_2s_ease-in-out_infinite] rounded-full" src={image} alt="image-or" />
+                    <LazyLoadImage
+                        alt="image-or"
+                        effect="blur"
+                        className="w-40 animate-[wiggle_2s_ease-in-out_infinite] rounded-full"
+                        src={image} />
                 </div>
             </div>
             <div className="ml-14 w-2/5 lg:w-full sm:ml-0 sm:w-full sm:p-2">

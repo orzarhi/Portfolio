@@ -8,3 +8,7 @@ export const success = (message) => {
 export const error = (message) => {
 	return toast.error(message);
 };
+
+export const info = (message) => {
+	return toast.info(message);
+};

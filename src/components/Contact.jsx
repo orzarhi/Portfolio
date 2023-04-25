@@ -1,7 +1,7 @@
 import { useRef, useState } from "react";
 import { BsSend } from "react-icons/bs"
 import emailjs from '@emailjs/browser';
-import { success, error } from "../utils/notification";
+import { success, error, info } from "../utils/notification";
 
 //BsSendCheck
 export const Contact = () => {
@@ -14,11 +14,14 @@ export const Contact = () => {
         e.preventDefault();
 
         try {
-            const sendRequest = await emailjs.sendForm(import.meta.env.VITE_SERVICE_ID, import.meta.env.VITE_TEMPLATE_ID, form.current, import.meta.env.VITE_PUBLIC_KEY)
-            if (sendRequest.status === 200) {
-                success("Message was sent successfully.")
-                resetInputs();
-                return;
+            if (!name || !email || !message) {
+                info("Please fill in all fields.")
+            } else {
+                const sendRequest = await emailjs.sendForm(import.meta.env.VITE_SERVICE_ID, import.meta.env.VITE_TEMPLATE_ID, form.current, import.meta.env.VITE_PUBLIC_KEY)
+                if (sendRequest.status === 200) {
+                    success("Message was sent successfully.")
+                    resetInputs();
+                }
             }
 
         } catch (err) {

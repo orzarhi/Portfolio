@@ -12,15 +12,12 @@ import csharp from "../assets/images/csharp.png"
 import zustand from "../assets/images/zustand.png"
 
 export const Technologies = () => {
-
-
     return (
-        <div className="font-electrolize text-white w-full mt-24">
+        <div className="w-full mt-24 text-white font-electrolize">
             <div className="flex justify-center">
-                <span className="text-3xl underline decoration-blue-dark/80 mt-5">My favorite technologies</span>
+                <span className="mt-5 text-3xl underline decoration-blue-dark/80">My favorite technologies</span>
             </div>
-
-            <div className="grid justify-items-center grid-cols-4 gap-y-10 ml-24 mt-5 p-8 xl:full sm:ml-0">
+            <div className="grid grid-cols-4 p-8 mt-5 ml-24 justify-items-center gap-y-10 xl:full sm:ml-0">
                 <img src={zustand} className="w-24 image-items " />
                 <img src={css} className="w-12 image-items" />
                 <img src={csharp} className="w-12 image-items" />
@@ -34,6 +31,7 @@ export const Technologies = () => {
                 <img src={reactQury} className="w-12 image-items" />
                 <img src={html} className="w-12 image-items" />
             </div>
+
         </div >
 
     )

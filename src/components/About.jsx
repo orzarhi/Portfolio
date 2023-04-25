@@ -31,7 +31,7 @@ export const About = () => {
                 <div className="relative max-w-xs overflow-hidden bg-no-repeat bg-cover w-max">
                     <LazyLoadImage
                         alt="image-or"
-                        effect="blur"
+                        effect="black-and-white"
                         className="w-40 animate-[wiggle_2s_ease-in-out_infinite] rounded-full"
                         src={image} />
                 </div>

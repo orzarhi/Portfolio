@@ -14,9 +14,13 @@ body {
 }
 
 .image-items {
-	@apply transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-200;
+	@apply transition duration-200 ease-in-out delay-150 hover:-translate-y-1 hover:scale-110;
 }
 
-.contact-items {
-	@apply shadow-md rounded-lg hover:shadow-blue;
+.contact-icons {
+	@apply rounded-lg shadow-md hover:shadow-blue;
+}
+
+.contact-form {
+	@apply w-2/5 h-12 bg-black border rounded-md md:w-11/12 placeholder:p-2 focus:border-teal focus:ring-purple focus:outline-none focus:ring focus:ring-opacity-40;
 }

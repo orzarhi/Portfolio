@@ -55,10 +55,10 @@ export const About = () => {
                         Overall, I&lsquo;m a fast learner, dedicated team player, and always up for a challenge. Let&lsquo;s build something awesome together!
                     </span>
                     <div className="flex justify-start mt-5 text-2xl sm:justify-center">
-                        <a target="_blank" href="https://github.com/orzarhi"> <TbBrandGithub className="contact-items" /></a>
-                        <a target="_blank" href="https://www.linkedin.com/in/or-zarhi/"><CiLinkedin className="ml-6 contact-items" /></a>
-                        <a target="_blank" href="mailto:or.zarhi11@gmail.com">  <AiOutlineMail className="ml-6 contact-items" /></a>
-                        <a target="_blank" href="https://api.whatsapp.com/send/?phone=972523638638&text=שלום אור זרחי,&type=phone_number&app_absent=0"> <AiOutlineWhatsApp className="ml-6 contact-items" /></a>
+                        <a target="_blank" href="https://github.com/orzarhi"> <TbBrandGithub className="contact-icons" /></a>
+                        <a target="_blank" href="https://www.linkedin.com/in/or-zarhi/"><CiLinkedin className="ml-6 contact-icons" /></a>
+                        <a target="_blank" href="mailto:or.zarhi11@gmail.com">  <AiOutlineMail className="ml-6 contact-icons" /></a>
+                        <a target="_blank" href="https://api.whatsapp.com/send/?phone=972523638638&text=שלום אור זרחי,&type=phone_number&app_absent=0"> <AiOutlineWhatsApp className="ml-6 contact-icons" /></a>
                         <a href="Or Zarhi-CV.pdf" download="Or Zarhi-CV.pdf"> <BsFiletypePdf className="ml-6 shadow-md cursor-pointer hover:shadow-blue" /></a>
                     </div>
 

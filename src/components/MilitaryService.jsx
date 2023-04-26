@@ -9,7 +9,7 @@ export const MilitaryService = () => {
                 </span>
             </div>
             <div className="flex justify-center mt-5">
-                <Card place={""} title={"Division 319"} date={"Feb 2016 to Oct 2018"} section={"Kitchen manager, I managed other soldiers, took care of orders and supplies."} />
+                <Card place={""} title={"Division 319"} date={"Feb 2016 to Oct 2018"} section={"I managed other soldiers, took care of orders and supplies."} />
             </div>
         </>
 

@@ -3,7 +3,7 @@ import { Card } from "./Card"
 export const Experience = () => {
     return (
         <>
-            <div className="flex justify-center text-white lg:mt-5 font-electrolize xl:mt-52 sm:mt-44">
+            <div className="flex justify-center text-white  font-electrolize xl:mt-52  sm:mt-48">
                 <span className="text-3xl underline decoration-blue-dark/80 ">
                     Experience
                 </span>

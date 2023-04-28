@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 /* eslint-disable react/jsx-no-target-blank */
 import image from "../assets/images/or.jpg"
 import { TbBrandGithub } from "react-icons/tb"
@@ -50,9 +51,7 @@ export const About = () => {
                     </div>
                     <br />
                     <span className="text-2xl sm:text-xl">
-                        I&lsquo;m a passionate Fullstack Developer with a love for creating complex apps and solving problems. I&lsquo;m always looking for ways to improve my skills and stay on top of the latest technologies.
-                        I&lsquo;ve work and  experience in Node.js, Express.js, NoSQL, React, Remix, Tailwind and more.
-                        Overall, I&lsquo;m a fast learner, a dedicated team player, and always up for a challenge. Let&lsquo;s build something awesome together!
+                        I'm an experienced software developer with 1.5 years of experience in the industry and a deep passion for programming. Throughout my career, I‘m always looking for ways to improve my skills and stay on top of the latest technologies. I‘ve work and experience in Node.js, Express.js, NoSQL, React, Remix, Tailwind and more.
                     </span>
                     <div className="flex justify-start mt-5 text-2xl sm:justify-center">
                         <a target="_blank" href="https://github.com/orzarhi"> <TbBrandGithub className="contact-icons" /></a>

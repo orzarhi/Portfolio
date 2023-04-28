@@ -22,5 +22,5 @@ body {
 }
 
 .contact-form {
-	@apply w-2/5 h-12 bg-black border rounded-md md:w-11/12 placeholder:p-2 focus:border-teal focus:ring-purple focus:outline-none focus:ring focus:ring-opacity-40;
+	@apply w-2/5 h-12 bg-black border rounded-md lg:w-1/2 md:w-11/12 placeholder:p-2 focus:border-teal focus:ring-purple focus:outline-none focus:ring focus:ring-opacity-40;
 }

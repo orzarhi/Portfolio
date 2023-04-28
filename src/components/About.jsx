@@ -37,8 +37,7 @@ export const About = () => {
                         src={image} />
                 </div>
             </div>
-            <div className="w-2/5 ml-14 xl:w-full sm:ml-0 sm:w-full sm:p-2 lg:ml-0">
-
+            <div className="w-2/5 ml-14 xl:w-full lg:ml-0 md:mt-10 sm:ml-0 sm:w-full sm:p-2 ">
                 <motion.div
                     variants={divVariants}
                     initial="initial"

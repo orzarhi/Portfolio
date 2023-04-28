@@ -77,7 +77,7 @@ export const Contact = () => {
                     <input className="contact-form" name="user_name" placeholder="Name" value={name} onChange={({ target }) => setName(target.value)} />
                     <input className="contact-form" type="email" name="user_email" placeholder="Email" value={email} onChange={({ target }) => setEmail(target.value)} />
                     <textarea className="contact-form" name="message" placeholder="Message" value={message} onChange={({ target }) => setMessage(target.value)} />
-                    <button className={` w-2/5 p-1 mb-16 text-2xl rounded-md shadow-md md:w-11/12  shadow-grey-dark hover:shadow-gray  bg-gradient-to-r ${!sent ? "from-teal to-purple via-blue" : "from-teal/40 to-purple/40 via-blue/40"}`} disabled={sent}> <BsSend className="inline-block" /></button>
+                    <button className={` w-2/5 p-1 mb-16 text-2xl rounded-md shadow-md lg:w-1/2 md:w-11/12  shadow-grey-dark hover:shadow-gray  bg-gradient-to-r ${!sent ? "from-teal to-purple via-blue" : "from-teal/40 to-purple/40 via-blue/40"}`} disabled={sent}> <BsSend className="inline-block" /></button>
                 </form >
             </motion.div>
         </>

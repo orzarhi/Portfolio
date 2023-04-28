@@ -51,8 +51,8 @@ export const About = () => {
                     <br />
                     <span className="text-2xl sm:text-xl">
                         I&lsquo;m a passionate Fullstack Developer with a love for creating complex apps and solving problems. I&lsquo;m always looking for ways to improve my skills and stay on top of the latest technologies.
-                        I&lsquo;ve work and  experience in Node.js, Express.js, .net, Python, SQL, NoSQL, Docker, HTML, CSS, JavaScript, TypeScript, React, React Native, Remix, tailwind,  Crypto, Arduino and more.
-                        Overall, I&lsquo;m a fast learner, dedicated team player, and always up for a challenge. Let&lsquo;s build something awesome together!
+                        I&lsquo;ve work and  experience in Node.js, Express.js, NoSQL, React, Remix, Tailwind and more.
+                        Overall, I&lsquo;m a fast learner, a dedicated team player, and always up for a challenge. Let&lsquo;s build something awesome together!
                     </span>
                     <div className="flex justify-start mt-5 text-2xl sm:justify-center">
                         <a target="_blank" href="https://github.com/orzarhi"> <TbBrandGithub className="contact-icons" /></a>

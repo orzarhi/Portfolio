@@ -5,7 +5,7 @@ export const MilitaryService = () => {
         <>
             <div className="flex justify-center font-electrolize text-white mt-24 md:ml-0">
                 <span className="text-3xl underline decoration-blue-dark/80">
-                    Military Service
+                    Military service
                 </span>
             </div>
             <div className="flex justify-center mt-5">

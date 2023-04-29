@@ -5,7 +5,7 @@ export const Education = () => {
 
         <>
             <div className="flex justify-center mt-24 text-white font-electrolize">
-                <span className="text-3xl underline decoration-blue-dark/80 xl:ml-10 sm:ml-0">
+                <span className="text-3xl underline decoration-blue-dark/80  sm:ml-0">
                     Education
                 </span>
             </div>

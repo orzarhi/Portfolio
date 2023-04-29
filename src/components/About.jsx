@@ -44,7 +44,7 @@ export const About = () => {
                     animate="animate"
                 >
                     <div className="lg:mt-10 lg:flex lg:justify-center">
-                        <span className="mt-16 text-3xl underline decoration-blue-dark/80">
+                        <span className="mt-16 text-3xl underline decoration-blue-dark/80 sm:mr-1">
                             About me
                         </span>
                     </div>

@@ -79,9 +79,9 @@ export const Contact = () => {
             >
 
                 <form ref={form} onSubmit={sendEmail} className="grid gap-5 mt-5 text-white rounded-md justify-items-center">
-                    <input className="contact-form" name="user_name" placeholder="Name" value={name} onChange={({ target }) => setName(target.value)} />
-                    <input className="contact-form" type="email" name="user_email" placeholder="Email" value={email} onChange={({ target }) => setEmail(target.value)} />
-                    <textarea className="contact-form" name="message" placeholder="Message" value={message} onChange={({ target }) => setMessage(target.value)} />
+                    <input className="contact-form" required name="user_name" placeholder="Name" value={name} onChange={({ target }) => setName(target.value)} />
+                    <input className="contact-form" required type="email" name="user_email" placeholder="Email" value={email} onChange={({ target }) => setEmail(target.value)} />
+                    <textarea className="contact-form" required name="message" placeholder="Message" value={message} onChange={({ target }) => setMessage(target.value)} />
                     <button className={` w-2/5 p-1 mb-16 text-2xl rounded-md shadow-md lg:w-2/3 md:w-11/12  shadow-grey-dark hover:shadow-gray  bg-gradient-to-r ${!sent ? "from-teal to-purple via-blue" : "from-teal/40 to-purple/40 via-blue/40"}`} disabled={sent}> <BsSend className="inline-block" /></button>
                 </form >
             </motion.div>

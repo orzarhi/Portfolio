@@ -1,2 +1,2 @@
 # Portfolio
-https://or-zarhi-portfolio.netlify.app/
+https://orzarhi.life/

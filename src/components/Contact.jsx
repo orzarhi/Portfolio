@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import { BsSend } from "react-icons/bs";
 import { useInView } from "react-intersection-observer";
 import { error, info, success } from "../utils/notification";
+import emoji from "../assets/images/emoji.png"
 
 export const Contact = () => {
     const form = useRef();
@@ -66,6 +67,9 @@ export const Contact = () => {
                     Contact me
                 </span>
             </div>
+            <div className='flex justify-center'>
+                <img className='w-36 -mb-16' src={emoji} />
+            </div>
 
             <motion.div
                 ref={ref}
@@ -73,6 +77,7 @@ export const Contact = () => {
                 initial="hidden"
                 animate={control}
             >
+
                 <form ref={form} onSubmit={sendEmail} className="grid gap-5 mt-5 text-white rounded-md justify-items-center">
                     <input className="contact-form" name="user_name" placeholder="Name" value={name} onChange={({ target }) => setName(target.value)} />
                     <input className="contact-form" type="email" name="user_email" placeholder="Email" value={email} onChange={({ target }) => setEmail(target.value)} />

@@ -4,7 +4,7 @@ export const MilitaryService = () => {
     return (
         <>
             <div className="flex justify-center font-electrolize text-white mt-24 md:ml-0">
-                <span className="text-3xl underline decoration-blue-dark/80">
+                <span className="selection text-3xl underline decoration-blue-dark/80">
                     Military service
                 </span>
             </div>

@@ -15,7 +15,7 @@ export const Technologies = () => {
     return (
         <div className="w-full mt-24 text-white font-electrolize">
             <div className="flex justify-center">
-                <span className="mt-5 text-3xl underline decoration-blue-dark/80">My favorite technologies</span>
+                <span className="selection mt-5 text-3xl underline decoration-blue-dark/80">My favorite technologies</span>
             </div>
             <div className="grid grid-cols-4 p-8 mt-5 ml-24 justify-items-center gap-y-10 xl:full lg:ml-0">
                 <img src={zustand} className="w-24 not-drag image-items " />

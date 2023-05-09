@@ -24,9 +24,9 @@ export const About = () => {
     };
 
     return (
-        <div className="flex justify-start p-24 text-white font-electrolize lg:grid sm:w-full sm:p-5">
+        <div className=" flex justify-start p-24 text-white font-electrolize lg:grid sm:w-full sm:p-5">
             <div className="h-36 sm:-ml-2 w-max">
-                <h1 className="overflow-hidden text-5xl border-r-4 animate-typing whitespace-nowrap border-r-white lg:text-3xl sm:text-2xl ">
+                <h1 className="selection overflow-hidden text-5xl border-r-4 animate-typing whitespace-nowrap border-r-white lg:text-3xl sm:text-2xl ">
                     I&lsquo;m Or Zarhi, Full-Stack Developer
                 </h1>
                 <div className="relative max-w-xs overflow-hidden bg-no-repeat bg-cover w-max">
@@ -44,12 +44,12 @@ export const About = () => {
                     animate="animate"
                 >
                     <div className="lg:mt-10 lg:flex lg:justify-center">
-                        <span className="mt-16 text-3xl underline decoration-blue-dark/80 sm:mr-1">
+                        <span className="selection mt-16 text-3xl underline decoration-blue-dark/80 sm:mr-1">
                             About me
                         </span>
                     </div>
                     <br />
-                    <span className="text-2xl sm:text-xl">
+                    <span className="selection text-2xl sm:text-xl">
                         I'm an experienced software developer with 1.5 years of experience in the industry and a deep passion for programming. Throughout my career, I‘m always looking for ways to improve my skills and stay on top of the latest technologies. I‘ve work and experience in Node.js, Express.js, .NET, NoSQL, React, Remix, Tailwind and more.
                     </span>
                     <div className="flex justify-start mt-5 text-2xl sm:justify-center">

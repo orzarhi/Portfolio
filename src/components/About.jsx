@@ -33,7 +33,7 @@ export const About = () => {
                     <LazyLoadImage
                         alt="image-or"
                         effect="blur"
-                        className="w-40 animate-[wiggle_2s_ease-in-out_infinite] rounded-full"
+                        className="not-drag w-40 animate-[wiggle_2s_ease-in-out_infinite] rounded-full"
                         src={image} />
                 </div>
             </div>

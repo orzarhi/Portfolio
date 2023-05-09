@@ -18,18 +18,18 @@ export const Technologies = () => {
                 <span className="mt-5 text-3xl underline decoration-blue-dark/80">My favorite technologies</span>
             </div>
             <div className="grid grid-cols-4 p-8 mt-5 ml-24 justify-items-center gap-y-10 xl:full lg:ml-0">
-                <img src={zustand} className="w-24 image-items " />
-                <img src={css} className="w-12 image-items" />
-                <img src={csharp} className="w-12 image-items" />
-                <img src={mongodb} className="w-12 image-items" />
-                <img src={node} className="w-12 image-items" />
-                <img src={javascript} className="w-12 image-items" />
-                <img src={typescript} className="w-12 image-items" />
-                <img src={docker} className="w-12 image-items" />
-                <img src={tailwind} className="w-12 image-items" />
-                <img src={react} className="w-12 image-items" />
-                <img src={reactQury} className="w-12 image-items" />
-                <img src={html} className="w-12 image-items" />
+                <img src={zustand} className="w-24 not-drag image-items " />
+                <img src={css} className="w-12 not-drag image-items" />
+                <img src={csharp} className="w-12 not-drag image-items" />
+                <img src={mongodb} className="w-12 not-drag image-items" />
+                <img src={node} className="w-12 not-drag image-items" />
+                <img src={javascript} className="w-12 not-drag image-items" />
+                <img src={typescript} className="w-12 not-drag image-items" />
+                <img src={docker} className="w-12 not-drag image-items" />
+                <img src={tailwind} className="w-12 not-drag image-items" />
+                <img src={react} className="w-12 not-drag image-items" />
+                <img src={reactQury} className="w-12 not-drag image-items" />
+                <img src={html} className="w-12 not-drag image-items" />
             </div>
 
         </div >

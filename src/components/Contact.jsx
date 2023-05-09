@@ -68,7 +68,7 @@ export const Contact = () => {
                 </span>
             </div>
             <div className='flex justify-center'>
-                <img className='w-36 -mb-16' src={emoji} />
+                <img className='not-drag w-36 -mb-16' src={emoji} />
             </div>
 
             <motion.div

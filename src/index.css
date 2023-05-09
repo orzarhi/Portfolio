@@ -24,3 +24,11 @@ body {
 .contact-form {
 	@apply w-2/5 h-12 bg-black border rounded-md lg:w-2/3 md:w-11/12 placeholder:p-2 focus:border-teal focus:ring-purple focus:outline-none focus:ring focus:ring-opacity-40;
 }
+
+.not-drag {
+	-webkit-user-drag: none;
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+}

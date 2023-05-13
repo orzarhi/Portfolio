@@ -6,6 +6,6 @@ export const Speech = () => {
     const { speak } = useSpeechSynthesis();
 
     return (
-        <img title='Click me' className='w-7 h-7 mt-20 relative bottom-2.5 ml-2 cursor-pointer' src={speaker} onClick={() => speak({ text })} />
+        <img title='Click me' className='not-drag w-7 h-7 mt-20 relative bottom-2.5 ml-2 cursor-pointer' src={speaker} onClick={() => speak({ text })} />
     );
 }

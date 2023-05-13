@@ -8,6 +8,7 @@ import { BsFiletypePdf } from "react-icons/bs"
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import { motion } from "framer-motion";
+import { Speech } from "./Speech"
 
 export const About = () => {
     const divVariants = {
@@ -43,11 +44,13 @@ export const About = () => {
                     initial="initial"
                     animate="animate"
                 >
-                    <div className="lg:mt-10 lg:flex lg:justify-center">
+                    <div className="flex lg:mt-10 lg:flex lg:justify-center">
                         <span className="selection mt-16 text-3xl underline decoration-blue-dark/80 sm:mr-1">
                             About me
                         </span>
+                        <Speech />
                     </div>
+
                     <br />
                     <span className="selection text-2xl sm:text-xl">
                         I'm an experienced software developer with 1.5 years of experience in the industry and a deep passion for programming. Throughout my career, I‘m always looking for ways to improve my skills and stay on top of the latest technologies. I‘ve work and experience in Node.js, Express.js, .NET, NoSQL, React, Remix, Tailwind and more.

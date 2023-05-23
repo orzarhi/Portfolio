@@ -25,7 +25,7 @@ export const About = () => {
     };
 
     return (
-        <div className=" flex justify-start p-24 text-white font-electrolize lg:grid sm:w-full sm:p-5">
+        <main className=" flex bg-gradient-to-tl from-teal/5 to-purple/25 via-blue/20 justify-start p-24 text-white font-electrolize lg:grid sm:w-full sm:p-5">
             <div className="h-36 sm:-ml-2 w-max">
                 <h1 className="selection overflow-hidden text-5xl border-r-4 animate-typing whitespace-nowrap border-r-white lg:text-3xl sm:text-2xl ">
                     I&lsquo;m Or Zarhi, Full-Stack Developer
@@ -65,7 +65,7 @@ export const About = () => {
 
                 </motion.div>
             </div>
-        </div >
+        </main >
 
 
 

@@ -7,6 +7,7 @@ export default {
 				comic: ["Comic Neue", "cursive"],
 				electrolize: ["Kampung Orange", "sans-serif"],
 			},
+
 			keyframes: {
 				typing: {
 					"0%": {

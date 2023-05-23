@@ -4,9 +4,6 @@
 
 body {
 	background-color: #0f0e13;
-	background-image: radial-gradient(at 30% 0%, #2f436a 0, transparent 25%),
-		radial-gradient(at 20% 0%, #0cdcef 0, transparent 25%);
-	background-repeat: no-repeat;
 }
 
 ::-webkit-scrollbar {
@@ -22,7 +19,7 @@ body {
 }
 
 .contact-form {
-	@apply w-2/5 h-12 bg-black border rounded-md lg:w-2/3 md:w-11/12 placeholder:p-2 focus:border-teal focus:ring-purple focus:outline-none focus:ring focus:ring-opacity-40;
+	@apply w-2/5 h-12 z-50 bg-black border rounded-md lg:w-2/3 md:w-11/12 placeholder:p-2 focus:border-teal focus:ring-white focus:outline-none focus:ring focus:ring-opacity-40;
 }
 
 .not-drag {

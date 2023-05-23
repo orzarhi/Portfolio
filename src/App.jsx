@@ -20,16 +20,13 @@ export const App = () => {
       />
       <motion.div className="fixed top-0 left-0 right-0 bg-teal h-2 origin-left	" style={{ scaleX: scrollYProgress }} />
       <About />
-      <motion.div
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        transition={{ duration: 1.5 }}>
-        <Experience />
-        <Education />
-        <Technologies />
-        <MilitaryService />
-        <Contact />
-      </motion.div>
+
+      <Experience />
+      <Education />
+      <Technologies />
+      <MilitaryService />
+      <Contact />
+
     </>
   )
 }

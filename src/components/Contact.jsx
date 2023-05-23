@@ -1,10 +1,11 @@
 import emailjs from '@emailjs/browser';
-import { motion, useAnimation } from "framer-motion";
-import { useEffect, useRef, useState } from "react";
+import { useRef, useState } from "react";
 import { BsSend } from "react-icons/bs";
-import { useInView } from "react-intersection-observer";
+import emoji from "../assets/images/emoji.png";
 import { error, info, success } from "../utils/notification";
-import emoji from "../assets/images/emoji.png"
+import { useEffect } from "react"
+import { motion, useAnimation } from "framer-motion"
+import { useInView } from "react-intersection-observer"
 
 export const Contact = () => {
     const form = useRef();
@@ -13,10 +14,9 @@ export const Contact = () => {
     const [message, setMessage] = useState("");
     const [sent, setSent] = useState(false);
 
-
     const boxVariant = {
         hidden: { opacity: 0, slice: 0, y: 100 },
-        visible: { opacity: 1, slice: 1, y: 0, transition: { duration: 1.5 } }
+        visible: { opacity: 1, slice: 0, y: 0, transition: { duration: 1.5 } }
     };
 
     const control = useAnimation();
@@ -61,30 +61,29 @@ export const Contact = () => {
     };
 
     return (
-        <>
-            <div className="flex justify-center mt-24 text-white font-electrolize md:ml-0">
-                <span className="selection text-3xl underline decoration-blue-dark/80 xl:ml-0">
+        <main className='bg-gradient-to-tr from-purple/20  to-teal/10 via-blue/5'>
+            <div className="flex justify-center  text-white font-electrolize md:ml-0">
+                <span className="selection text-3xl underline mt-24 decoration-blue-dark/80 xl:ml-0">
                     Contact me
                 </span>
             </div>
-            <div className='flex justify-center'>
-                <img className='not-drag w-36 -mb-16' src={emoji} />
-            </div>
-
             <motion.div
                 ref={ref}
                 variants={boxVariant}
                 initial="hidden"
                 animate={control}
             >
-
-                <form ref={form} onSubmit={sendEmail} className="grid gap-5 mt-5 text-white rounded-md justify-items-center">
-                    <input className="contact-form" required name="user_name" placeholder="Name" value={name} onChange={({ target }) => setName(target.value)} />
-                    <input className="contact-form" required type="email" name="user_email" placeholder="Email" value={email} onChange={({ target }) => setEmail(target.value)} />
-                    <textarea className="contact-form" required name="message" placeholder="Message" value={message} onChange={({ target }) => setMessage(target.value)} />
-                    <button className={` w-2/5 p-1 mb-16 text-2xl rounded-md shadow-md lg:w-2/3 md:w-11/12  shadow-grey-dark hover:shadow-gray  bg-gradient-to-r ${!sent ? "from-teal to-purple via-blue" : "from-teal/40 to-purple/40 via-blue/40"}`} disabled={sent}> <BsSend className="inline-block" /></button>
-                </form >
+                <div className='flex justify-center'>
+                    <img className='not-drag w-36 -mb-16' src={emoji} />
+                </div>
             </motion.div>
-        </>
+            <form ref={form} onSubmit={sendEmail} className="grid gap-5 mt-5 text-white rounded-md justify-items-center">
+                <input className="contact-form bg-gradient-to-tl from-black  to-purple/20 via-blue/20" required name="user_name" placeholder="Name" value={name} onChange={({ target }) => setName(target.value)} />
+                <input className="contact-form bg-gradient-to-tl from-purple/20 via-teal/10 to-teal/20" required type="email" name="user_email" placeholder="Email" value={email} onChange={({ target }) => setEmail(target.value)} />
+                <textarea className="contact-form bg-gradient-to-tl from-black/5 to-purple/20 via-teal/20" required name="message" placeholder="Message" value={message} onChange={({ target }) => setMessage(target.value)} />
+                <button className={` w-2/5 p-1 mb-16 text-2xl rounded-md shadow-md lg:w-2/3 md:w-11/12  shadow-grey-dark hover:shadow-gray  bg-gradient-to-r ${!sent ? "from-teal to-purple via-blue" : "from-teal/40 to-purple/40 via-blue/40"}`} disabled={sent}> <BsSend className="inline-block" /></button>
+            </form >
+
+        </main>
     )
 }

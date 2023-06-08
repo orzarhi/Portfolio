@@ -39,7 +39,7 @@ export const Experience = () => {
 
                     <Card place={"Maxsoft company"} title={"Full-Stack Developer"} date={"Aug 2022 to present"} section={"A Full Stack Developer at a professional software company. Worked on several projects for various customers. developedand maintained code with assorted tools, such as: Node.js, .NET, mongoDB, Sql, JavaScriptand React."} />
                     <Card place={"Zefat College"} title={"Computer Science Tutor"} date={"Jan 2023 to present"} section={"Teaching C#, Data structures and Algorithms courses."} recommendation={"Letter of recommendation"} />
-                    <Card place={"Codeo company"} title={"Full-Stack Developer"} date={"Jan 2022 to Jul 2022"} section={"I worked as Full Stack Developer, developed and maintained code, and had the chance to work with: Node.js, .NET, JavaScript and React."} />
+                    <Card place={"Codeo company"} title={"Full-Stack Developer"} date={"Jun 2021 to Jul 2022"} section={"I worked as Full Stack Developer, developed and maintained code, and had the chance to work with: Node.js, .NET, JavaScript and React."} />
                 </div>
             </motion.div>
         </main>

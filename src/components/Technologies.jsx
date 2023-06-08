@@ -34,7 +34,7 @@ export const Technologies = () => {
                 </div>
                 <div className="grid grid-cols-4 p-8 mt-5 ml-24 justify-items-center gap-y-10 xl:full lg:ml-0">
                     {technologiesIcon.map((item) => (
-                        <img key={item.id} src={`${item.image}`} className={`${item.title === "zustand" ? "w-24" : "w-12"} not-drag image-items`} />
+                        <img key={item.id} src={item.image} alt={item.title} className={`${item.title === "zustand" ? "w-24" : "w-12"} not-drag image-items`} />
                     ))}
                 </div>
             </motion.div>

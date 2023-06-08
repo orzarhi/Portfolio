@@ -1,9 +1,10 @@
 export const technologiesIcon = [
 	{
 		id: 1,
-		title: "csharp",
-		image: "/src/assets/images/csharp.png",
+		title: "zustand",
+		image: "/src/assets/images/zustand.png",
 	},
+
 	{
 		id: 2,
 		title: "css",
@@ -54,8 +55,8 @@ export const technologiesIcon = [
 	},
 	{
 		id: 11,
-		title: "zustand",
-		image: "/src/assets/images/zustand.png",
+		title: "csharp",
+		image: "/src/assets/images/csharp.png",
 	},
 	{
 		id: 12,

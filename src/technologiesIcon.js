@@ -2,65 +2,65 @@ export const technologiesIcon = [
 	{
 		id: 1,
 		title: "zustand",
-		image: "../src/assets/images/zustand.png",
+		image: "zustand",
 	},
 
 	{
 		id: 2,
 		title: "css",
-		image: "../src/assets/images/css.png",
+		image: "css",
 	},
 	{
 		id: 3,
 		title: "docker",
-		image: "../src/assets/images/docker.png",
+		image: "docker",
 	},
 
 	{
 		id: 4,
 		title: "html",
-		image: "../src/assets/images/html.png",
+		image: "html",
 	},
 	{
 		id: 5,
 		title: "javascript",
-		image: "../src/assets/images/javascript.png",
+		image: "javascript",
 	},
 	{
 		id: 6,
 		title: "mongodb",
-		image: "../src/assets/images/mongodb.png",
+		image: "mongodb",
 	},
 
 	{
 		id: 7,
 		title: "reactQury",
-		image: "../src/assets/images/react-query.png",
+		image: "react-query",
 	},
 	{
 		id: 8,
 		title: "react",
-		image: "../src/assets/images/react.png",
+		image: "react",
 	},
 	{
 		id: 9,
 		title: "tailwind",
-		image: "../src/assets/images/tailwind.png",
+		image: "tailwind",
 	},
 
 	{
 		id: 10,
 		title: "typescript",
-		image: "../src/assets/images/typescript.png",
+		image: "typescript",
 	},
 	{
 		id: 11,
 		title: "csharp",
-		image: "../src/assets/images/csharp.png",
+		image: "csharp",
 	},
 	{
 		id: 12,
 		title: "node",
-		image: "../src/assets/images/node.png",
+		image: "node",
 	},
 ];

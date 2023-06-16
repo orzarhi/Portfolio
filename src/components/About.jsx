@@ -25,9 +25,9 @@ export const About = () => {
     };
 
     return (
-        <main className=" flex bg-gradient-to-tl from-teal/5 to-purple/25 via-blue/20 justify-start p-24 text-white font-electrolize lg:grid sm:w-full sm:p-5">
+        <main className="flex justify-start p-24 text-white  bg-gradient-to-tl from-teal/5 to-purple/25 via-blue/20 font-electrolize lg:grid sm:w-full sm:p-5">
             <div className="h-36 sm:-ml-2 w-max">
-                <h1 className="selection overflow-hidden text-5xl border-r-4 animate-typing whitespace-nowrap border-r-white lg:text-3xl sm:text-2xl ">
+                <h1 className="overflow-hidden text-5xl border-r-4 selection animate-typing whitespace-nowrap border-r-white lg:text-3xl sm:text-2xl ">
                     I&lsquo;m Or Zarhi, Full-Stack Developer
                 </h1>
                 <div className="relative max-w-xs overflow-hidden bg-no-repeat bg-cover w-max">
@@ -44,16 +44,16 @@ export const About = () => {
                     initial="initial"
                     animate="animate"
                 >
-                    <div className="-mb-4 flex lg:mt-10 lg:justify-center">
-                        <span className="selection mt-16 text-3xl underline decoration-blue-dark/80 sm:mr-1">
+                    <div className="flex -mb-4 lg:mt-10 lg:justify-center">
+                        <span className="mt-16 text-3xl underline selection decoration-blue-dark/80 sm:mr-1">
                             About me
                         </span>
                         <Speech />
                     </div>
 
                     <br />
-                    <span className="selection text-2xl sm:text-xl">
-                        I'm an experienced software developer with 2 years of experience in the industry and a deep passion for programming. Throughout my career, I‘m always looking for ways to improve my skills and stay on top of the latest technologies. I‘ve work and experience in Node.js, Express.js, .NET, NoSQL, React, Remix, Tailwind and more.
+                    <span className="text-2xl selection sm:text-xl">
+                        I'm an experienced software developer with 2 years of experience in the industry and a deep passion for programming. Throughout my career, I‘m always looking for ways to improve my skills and stay on top of the latest technologies. I‘ve work and experience in Node.js, Express.js, .NET, NoSQL, React, Next.js, Remix, Tailwind and more.
                     </span>
                     <div className="flex justify-start mt-5 text-2xl sm:justify-center">
                         <a target="_blank" href="https://github.com/orzarhi"> <TbBrandGithub className="contact-icons" /></a>

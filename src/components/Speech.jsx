@@ -2,7 +2,7 @@ import { useSpeechSynthesis } from 'react-speech-kit';
 import speaker from "../assets/images/speaker.png";
 
 export const Speech = () => {
-    const text = '-אני מְפַתֵּחַ תוכנה מְנֻסֶּה עם ניסיון של שנתיים בתעשייה ותשוקה עמוקה לְתִכְנוּת. במהלך הקריירה שלי, אני תמיד מחפש דרכים לשפר את הַכִּשורִים שלי ולהישאר מעודכן בטכנולוגיות הָעַדְכָּנִיות ביותר. יש לי עבודה וניסיון עם Node.js, Express.js, DOT NET, No SQL, React, Remix, Tailwind ועוד.';
+    const text = '-אני מְפַתֵּחַ תוכנה מְנֻסֶּה עם ניסיון של שנתיים בתעשייה ותשוקה עמוקה לְתִכְנוּת. במהלך הקריירה שלי, אני תמיד מחפש דרכים לשפר את הַכִּשורִים שלי ולהישאר מעודכן בטכנולוגיות הָעַדְכָּנִיות ביותר. יש לי עבודה וניסיון עם Node.js, Express.js, DOT NET, No SQL, React, Next.js, Remix, Tailwind ועוד.';
     const { speak } = useSpeechSynthesis();
 
     return (
